@@ -122,4 +122,18 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s;
+  cursor: pointer;
 }
+
+img.socialIcon:hover {
+  transform: scale(1.25) rotate(-10deg);
+  box-shadow: 0 8px 24px rgba(80, 80, 200, 0.25), 0 2px 8px rgba(0,0,0,0.10);
+  filter: brightness(1.2) drop-shadow(0 0 8px #4e567e);
+}
+
+/* add an amazing animation to the social icons */
+img.socialIcon:hover {
+  animation: bounce 0.5s;
+} 
+
